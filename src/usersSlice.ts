@@ -51,6 +51,9 @@ const usersSlice = createSlice({
       state.status = "succeeded";
       state.users = action.payload;
     });
+    builder.addCase(getUsers.pending, (state) => {
+      state.status = "loading";
+    });
   },
 });
 

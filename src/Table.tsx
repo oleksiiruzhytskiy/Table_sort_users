@@ -90,7 +90,11 @@ const Table = (): JSX.Element => {
           <label className="input-phone">Search by phone</label>
         </div>
       </div>
-
+      {status === "loading" && (
+        <p style={{ fontSize: "32px", textAlign: "center", marginTop: "20px" }}>
+          Loading...
+        </p>
+      )}
       {status === "succeeded" && (
         <table>
           <thead>
@@ -113,7 +117,7 @@ const Table = (): JSX.Element => {
           </tbody>
         </table>
       )}
-      {filteredUsers.length === 0 && (
+      {filteredUsers.length === 0 && status !== "loading" && (
         <p style={{ fontSize: "32px", textAlign: "center", marginTop: "20px" }}>
           Not Found
         </p>

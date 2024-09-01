@@ -14,14 +14,14 @@ body {
   font-style: normal;
 }
 #root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10% auto;
+  width: 100%;
+  height: 100%;
 }
 .main-container {
   width: 80%;
   height: 80%;
+  margin: 10% auto;
+
 
   .search-container {
     width: 100%;
@@ -81,6 +81,7 @@ body {
 
     th,
     td {
+      width: 25%;
       padding: 12px 15px;
       border-bottom: 1px solid #ddd;
     }
