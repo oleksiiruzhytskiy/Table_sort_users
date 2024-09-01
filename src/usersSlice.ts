@@ -48,6 +48,8 @@ const usersSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getUsers.fulfilled, (state, action) => {
+      console.log('action.payload', action);
+      console.log('state', state);
       state.status = "succeeded";
       state.users = action.payload;
     });
@@ -56,6 +58,7 @@ const usersSlice = createSlice({
     });
   },
 });
+
 
 export const { setSearchQuery } = usersSlice.actions;
 export default usersSlice;
