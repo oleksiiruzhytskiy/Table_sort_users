@@ -43,7 +43,6 @@ const Table = (): JSX.Element => {
       <div className="search-container">
         <div className="serach-name-container">
           <input
-            className="sort-button"
             type="text"
             name="name"
             autoComplete="off"
@@ -55,7 +54,6 @@ const Table = (): JSX.Element => {
         </div>
         <div className="serach-username-container">
           <input
-            className="sort-button"
             type="text"
             name="username"
             autoComplete="off"
@@ -67,7 +65,6 @@ const Table = (): JSX.Element => {
         </div>
         <div className="serach-email-container">
           <input
-            className="sort-button"
             type="text"
             name="email"
             autoComplete="off"
@@ -79,7 +76,6 @@ const Table = (): JSX.Element => {
         </div>
         <div className="serach-phone-container">
           <input
-            className="sort-button"
             type="text"
             name="phone"
             autoComplete="off"
