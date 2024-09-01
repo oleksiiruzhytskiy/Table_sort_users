@@ -1,0 +1,102 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+
+.main-container {
+  width: 80%;
+  height: 80%;
+}
+.main-container .search-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+.main-container .search-container div {
+  width: 100%;
+  position: relative;
+}
+.main-container .search-container div input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #b4a9a9;
+  padding: 0 0 8px 0;
+  outline: none;
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-container .search-container div input:not(:-moz-placeholder-shown) + label {
+  font-size: 12px;
+  top: -14px;
+}
+.main-container .search-container div input:focus + label, .main-container .search-container div input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: -14px;
+}
+.main-container .search-container div label {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s;
+  color: rgb(92, 73, 73);
+  opacity: 0.6;
+}
+.main-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.main-container table thead {
+  background-color: #4caf50;
+  color: white;
+}
+.main-container table th,
+.main-container table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.main-container table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-container table td {
+  color: #333;
+}
+.main-container table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.main-container table tbody tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+.main-container table tbody tr:hover {
+  background-color: #d1d1d1;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

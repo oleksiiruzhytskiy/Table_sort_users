@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Table_Sort_Users/static/css/main.646ae804.css",
+    "main.js": "/Table_Sort_Users/static/js/main.cac22e75.js",
+    "index.html": "/Table_Sort_Users/index.html",
+    "main.646ae804.css.map": "/Table_Sort_Users/static/css/main.646ae804.css.map",
+    "main.cac22e75.js.map": "/Table_Sort_Users/static/js/main.cac22e75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.646ae804.css",
+    "static/js/main.cac22e75.js"
+  ]
+}
