@@ -46,7 +46,8 @@ body {
         cursor: pointer;
 
         &:focus + label,
-        &:not(:placeholder-shown) + label {
+        &:not(:placeholder-shown) + label 
+        {
           font-size: 12px;
           top: -14px;
         }
